@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Weather App</title>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <div class="weather-info-container">
+        <h4>Sam's Weather App</h4>
+        <div class="weather-info">
+          <div class="temp-container">
+            <h1 class="temp"
+              >16 <sup><i class="far fa-circle"></i></sup
+            ></h1>
+          </div>
+          <div class="city-details-container">
+            <h1 class="city">London</h1>
+            <div class="time">
+              <p>22:00 - </p>
+
+              <p><span></span> Friday 9/10/21</p>
+            </div>
+          </div>
+          <div class="icon-container">
+            <img
+              id="weather-img"
+              src="./assests/weather/64x64/day/113.png"
+              alt="weather image"
+            />
+            <p id="condition">Cloudy</p>
+          </div>
+        </div>
+      </div>
+      <div class="weather-search-details">
+        <div class="search-city">
+          <div>
+            <input type="text" id="search" placeholder="Search Location..." />
+          </div>
+          <label id="search-btn" for="search"
+            ><i class="fa fa-search"></i
+          ></label>
+        </div>
+        <div class="city-list">
+          <div>
+            <ul>
+              <li class="cities">New York</li>
+              <li class="cities">California</li>
+              <li class="cities">Paris</li>
+              <li class="cities">Tokyo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details">
+          <div>
+            <h3>Weather Details</h3>
+          </div>
+          <ul>
+            <li class="cloudy">
+              <p>Cloudy</p>
+              <p id="cloud-value">25%</p>
+            </li>
+            <li class="humidity"
+              ><p>Humidity</p> <p id="humid-value">10%</p></li
+            >
+            <li class="wind">
+              <p>Windy</p>
+              <p id="windy-value">20km/h</p></li
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
